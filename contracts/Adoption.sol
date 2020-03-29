@@ -11,4 +11,10 @@ contract Adoption {
 
     return petId;
   }
+
+  // Retrieves adopters
+  // view keyword means function won't modify state of contract, only view
+  function getAdopters() public view returns (address[16] memory) {
+    return adopters;
+  }
 }
